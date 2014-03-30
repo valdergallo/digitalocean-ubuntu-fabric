@@ -18,7 +18,7 @@ def setup():
 
 
 def setup_webserver():
-    "Instal default packages for django and NGINX"
+    "Install default packages for django and NGINX"
     APT_GET_PACKAGES.append("nginx")
     setup()
 
