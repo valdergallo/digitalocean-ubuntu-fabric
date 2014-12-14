@@ -41,7 +41,8 @@ def update():
     "Update server content"
     local("git push")
     with cd(env.directory):
-        run('git pull --rebase')
+        run('git fetch --all')
+        run('git reset --hard origin/master')
 
 
 def pip(*args):
